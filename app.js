@@ -1,4 +1,4 @@
-// menu 
+// menu
 const hamBurger = document.querySelector('.hambuger');
 function showMenu() {
   const div = document.createElement('div');
@@ -7,7 +7,6 @@ function showMenu() {
   img.className = 'icon-img';
   img.src = './images/close.png';
   div.appendChild(img);
-
   function closed() {
     div.style.display = 'none';
     document.body.style.overflow = 'unset';
@@ -18,7 +17,6 @@ function showMenu() {
       div.style.display = 'none';
     }
   }
- 
   const ul = document.createElement('ul');
   let li = document.createElement('li');
   let a = document.createElement('a');

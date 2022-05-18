@@ -21,6 +21,7 @@
 > [video link](https://www.loom.com/share/f1f4ef25e4224d4bb60950159930fd5b)
 ### Acknowledgments
 - [Microverse](https://www.microverse.org)
+- [Cindy shin the original designer](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - etc 
 ### :memo: License 
 > This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.

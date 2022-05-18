@@ -13,18 +13,44 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.modal {
+  height: 100%;
+  width: 375px;
+  background: rgba(6, 54, 52, 0.5);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  position: fixed;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.modal ul {
+  padding: 20% 10%;
+}
+
+.modal li {
+  border-bottom: solid gray 1px;
+}
+
 .container {
   max-height: 90vh;
   width: 375px;
   margin: 5vh auto 10vh auto;
 }
 
-#hambuger {
-  background-color: rgba(39 42 49 0.5);
-  color: #272a31;
-  padding: 5px;
-  width: 40px;
-  height: 40px;
+.hambuger {
+  color: #434344;
+  padding: 12px;
+  margin: 5px;
+}
+
+.hambuger:hover {
+  cursor: pointer;
 }
 
 .navhidden {

@@ -12,8 +12,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="container wrapper">
+  <section class="container">
   <!-- header section  -->
+  <header class="navhidden">
+    <div id="nav" class="navhidden">
+  <div class="topmost-bar">
+    <ul>
+       <li><i class="fa fa-facebook"></i></li>
+       <li><i class="fab fa-twitter"></i></li>
+       <li><a href="#">English</a></li>
+       <li><a href="#">My Page</a></li>
+       <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+  </div>
   <nav class="navbar">
     <div class="navhidden">
       <span class="navspan"><i class="fa fa-cutlery" aria-hidden="true"></i>HB-DIET
@@ -31,12 +43,13 @@
         </button>
       </div>
     </nav>
+  </header>
     <ul class="homeul">
       <li><a href="./index.html"><span><i class="fas fa-home fa-1x" aria-hidden="true"></i>Home</span></a></li>
     </ul>
     <section class="main">
       <span class="hambuger">
-        <i class="fas fa-bars fa-2x" id="hambuger" ></i>
+        <i class="fas fa-bars fa-2x"  onclick="showMenu" aria-hidden="true"></i>
       </span>
        <h1 class="about">HEALTHY DIET FOR EVERY ONE</h1>
          <p class="paragraph paragraph2">
@@ -84,8 +97,8 @@
        </div>
      </section>
      <section id="partners">
-      <h2 id="invisible">Sponsors</h2>
-      <div class="red-line1"></div>
+      <h2 id="visible">Sponsors</h2>
+      <div class="red-lines"></div>
       <div id="partners-container">
         <span><i class="fab fa-google"></i>Google</span>
         <span><i class="fab fa-airbnb"></i>airbnb</span>
@@ -103,10 +116,10 @@
           <span>HB-DIET</span>
           <span>Food House</span>
         </div>
+        <p id="footer-p">
+          2022 Foodhouse Diet Home. Some Rights Reserved
+        </p>
       </div>
-      <p id="footer-p">
-        2022 Foodhouse Diet Home. Some Rights Reserved
-      </p>
     </footer>
     </section>  
     <script src="app.js"></script> 

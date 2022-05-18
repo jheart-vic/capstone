@@ -1,5 +1,6 @@
 // menu
 const hamBurger = document.querySelector('.hambuger');
+
 function showMenu() {
   const div = document.createElement('div');
   div.className = 'modal';
@@ -66,7 +67,7 @@ function showMenu() {
   window.addEventListener('resize', resetMenu);
 }
 
-hamBurger.addEventListener('click', showMenu);
+ hamBurger.addEventListener('click',showMenu);
 
 // featured speakers
 const cardArr = [

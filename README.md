@@ -17,7 +17,7 @@
 > Give a :star: if you like this project!
 
 ### Live Demo 
-> [Live Demo link](https://jheart-vic.github.io/capstone/)
+> [Live Demo link]( https://jheart-vic.github.io/capstone/)
 ### Video
 > [video link](https://www.loom.com/share/f1f4ef25e4224d4bb60950159930fd5b)
 ### Acknowledgments

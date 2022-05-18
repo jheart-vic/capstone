@@ -1,5 +1,6 @@
 // menu
 const hamBurger = document.querySelector('.hambuger');
+
 function showMenu() {
   const div = document.createElement('div');
   div.className = 'modal';

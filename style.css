@@ -6,11 +6,24 @@
   padding: 0;
 }
 
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.topmost-bar {
+  display: none;
 }
 
 .modal {
@@ -44,14 +57,22 @@ body {
   margin: 5vh auto 10vh auto;
 }
 
-.modal .icon-img {
+.icon-img {
   float: right;
   padding: 20px;
 }
 
+/* .icon-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0 0 255 0.5);
+} */
+
 .hambuger {
   color: #434344;
-  padding: 12px;
+  padding-top: 12px;
   margin: 5px;
 }
 
@@ -64,7 +85,7 @@ body {
 }
 
 .main {
-  background-image: url('./images/backimage2.jpg');
+  background-image: url('./images/back.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -74,12 +95,12 @@ body {
 }
 
 .main-home {
-  background-image: url('./images/backimage2.jpg');
+  background-image: url('./images/back.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   opacity: 1;
 }
 
@@ -110,9 +131,9 @@ body {
 }
 
 .caption {
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: #272a31;
-  font-size: large;
+  font-size: 20px;
 }
 
 small {
@@ -137,7 +158,9 @@ small {
 }
 
 .diet-section {
-  background-color: #272a31;
+  background-image: url(./images/back2.jpg);
+  margin-top: 0;
+  transform: translateY(-32px);
 }
 
 .grid {
@@ -205,14 +228,15 @@ small {
   width: 55%;
 }
 
-.footer {
-  display: none;
-}
-
 .foodsectionbtn li a {
   font-size: 25px;
   color: #fff;
   text-decoration: none;
+}
+
+.foodsectionbtn li a:hover {
+  color: #ec5242;
+  font-size: 30px;
 }
 
 .line {
@@ -290,11 +314,12 @@ small {
   font-family: "cocogoose", sans-serif;
   color: #ec5242;
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .about,
 .about2 {
-  margin-left: 45px;
+  margin-left: 5%;
 }
 
 .caption2 {
@@ -321,8 +346,7 @@ small {
   color: #434344;
 }
 
-.logo-span,
-#icon-span {
+.logo-span {
   font-size: 4rem;
 }
 
@@ -345,17 +369,6 @@ small {
   margin-bottom: 5px;
 }
 
-.main-logo .logo-name {
-  display: flex;
-  font-size: 1rem;
-  font-family: cocogoose, sans-serif;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  color: #434344;
-}
-
 .images {
   margin: 5px;
   display: flex;
@@ -366,7 +379,7 @@ small {
 .img {
   width: 300px;
   height: 200px;
-  background-color: #ec5242;
+  background-image: url(./images/sunset.jpg);
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -447,16 +460,17 @@ small {
   display: none;
 }
 
-#invisible {
+#visible {
   color: #fff;
+  margin-bottom: 10px;
 }
 
-.red-line1 {
+.red-lines {
   width: 50px;
   height: 2px;
   background-color: #ec5242;
   opacity: 0.6;
-  margin: 15px 0 30px 0;
+  margin: 15px 0 40px 0;
 }
 
 #partners-container {
@@ -464,12 +478,12 @@ small {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 #partners-container span {
   color: #979494;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #partners-container span i {
@@ -505,6 +519,7 @@ footer .logo div {
   font-size: 0.8rem;
   width: 55%;
   line-height: 1.5;
+  margin-left: 5%;
 }
 
 @media screen and (min-width: 786px) {
@@ -514,11 +529,88 @@ footer .logo div {
     height: 100vh;
   }
 
-  .main {
-    background-color: #fff;
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     height: auto;
-    padding-bottom: 10px;
-    background-image: none;
+    background-color: #faf7f7;
+    position: -webkit-sticky;
+    z-index: 1;
+    transform: translateY(-35px);
+    box-shadow: 0 0 8px 3px #c4c1c1;
+  }
+
+  .navlinks li a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .homeul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #272a31;
+  }
+
+  .topmost-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+
+  .homeul li a:hover {
+    cursor: pointer;
+    color: #ec5242;
+    margin-right: 10px;
+  }
+
+  .navlinks li a:hover {
+    color: #ec5242;
+    cursor: pointer;
+  }
+
+  #nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #nav a:hover {
+    color: #ec5242;
+  }
+
+  #nav {
+    width: 100%;
+    background-color: #313131;
+    top: 0;
+  }
+
+  .topmost-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #313131;
+    padding: 10px 0;
+    color: #e9e7e7;
+  }
+
+  .topmost-bar ul {
+    width: 80%;
+    min-width: 768px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    text-align: center;
+    position: sticky;
+  }
+
+  .main {
+    height: 89vh;
+    background-image: url(./images/back.png);
+    padding-top: 2rem;
+    transform: translateY(-19px);
+    background-position: center;
   }
 
   .navhidden {
@@ -527,13 +619,13 @@ footer .logo div {
     justify-content: space-around;
     align-items: center;
     margin-bottom: 25px;
-    border-bottom: 1px solid #d3d3d3;
-    box-shadow: 7px 5px 3px 3px #d3d3d3;
+    padding-top: 10px;
   }
 
   .navlinks {
     display: flex;
     margin-left: 15px;
+    padding-left: 15px;
     gap: 5rem;
     font-size: 14px;
     align-items: center;
@@ -543,11 +635,8 @@ footer .logo div {
 
   .navlinks li {
     list-style: none;
-  }
-
-  .navlinks li a {
-    text-decoration: none;
-    color: #272a31;
+    width: 80%;
+    font-size: 16px;
   }
 
   .navbtn {
@@ -556,7 +645,9 @@ footer .logo div {
     border: 1px solid #272a31;
     color: #272a31;
     background-color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 12px;
   }
 
   .navbtn:hover {
@@ -567,35 +658,21 @@ footer .logo div {
   }
 
   .navspan {
-    font-size: 25px;
+    font-size: 2rem;
     color: #272a31;
-  }
-
-  .homeul li a {
-    text-decoration: none;
-    font-size: 14px;
-    color: #272a31;
-  }
-
-  .homeul li a:hover {
-    cursor: pointer;
-    color: #ec5242;
-    margin-right: 10px;
   }
 
   #cutlery {
     color: #ec5242;
   }
 
-  .navlinks li a:hover {
-    color: #ec5242;
-    cursor: pointer;
-  }
-
   .homeul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+    align-items: flex-start;
+    margin-right: 20px;
+    font-size: 28px;
+    transform: translate(-45px);
   }
 
   .hambuger {
@@ -605,8 +682,8 @@ footer .logo div {
   .main-home {
     margin-top: 0;
     padding-top: 3.3rem;
-    top: 0;
     height: 90vh;
+    transform: translateY(-32px);
   }
 
   .email {
@@ -617,6 +694,14 @@ footer .logo div {
     list-style: none;
   }
 
+  .foodsectionbtn li {
+    background-color: transparent;
+  }
+
+  .topmost-bar ul li {
+    list-style-type: none;
+  }
+
   .about {
     width: 50%;
     font-size: 2.7rem;
@@ -624,6 +709,14 @@ footer .logo div {
     margin-right: auto;
     padding-top: 5px;
     text-align: center;
+    background: url(./images/sunset3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "cocogoose", sans-serif;
+    color: #ec5242;
   }
 
   .description {
@@ -632,7 +725,7 @@ footer .logo div {
     margin-left: 13rem;
     margin-right: auto;
     font-family: cocogoose, sans-serif;
-    padding-top: 5px;
+    padding-top: 15px;
   }
 
   .subtext {
@@ -640,7 +733,7 @@ footer .logo div {
     font-size: 1.6rem;
     margin-left: 13rem;
     margin-right: auto;
-    padding-top: 2rem;
+    padding-top: 5rem;
     font-family: "Lato", sans-serif;
   }
 
@@ -650,10 +743,11 @@ footer .logo div {
     padding: 15px;
     border: 2px solid #d3d3d3;
     text-align: center;
+    height: 20%;
   }
 
   .paragraph1 {
-    font-size: 12px;
+    font-size: 15.5px;
     color: #272a31;
     border: 2px solid #d3d3d3;
     padding: 12px;
@@ -733,43 +827,57 @@ footer .logo div {
 
   footer {
     justify-content: center;
-    background-color: #434344;
-    color: #d3d3d3;
+    background-color: #d3d3d3;
+    color: #434344;
   }
 
-  .hidden {
+  .logo-name {
+    display: flex;
+    font-size: 1rem;
+    font-family: cocogoose, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #434344;
+  }
+
+  #partners {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #434344;
     height: 40%;
-    gap: 15px;
+    gap: 12px;
   }
 
-  .hidden #sponsor-container {
+  #partners #partners-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #979494;
   }
 
-  #sponsor-container span {
+  #partners-container span {
     color: #979494;
-    font-size: 1.2rem;
     margin-left: 10px;
+    font-size: 1.5rem;
   }
 
-  #sponsor-container span i {
-    margin-right: 5px;
+  #partners-container span i {
+    margin-right: 7px;
+    font-size: 1.5rem;
   }
 
-  .redline {
+  .red-lines {
     margin-top: 3px;
+    margin-bottom: 2rem;
   }
 
   #visible {
     color: #979494;
+    text-align: center;
   }
 
   .diet {
@@ -793,10 +901,7 @@ footer .logo div {
   .line {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .foodsectionbtn li {
-    background-color: transparent;
+    margin-bottom: 3rem;
   }
 
   .grid:hover {
@@ -808,51 +913,27 @@ footer .logo div {
     justify-content: center;
     background-color: whitesmoke;
     color: #434344;
+    text-align: center;
   }
 
   footer .logo {
     display: flex;
-    color: #fff;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
 
-  .icon {
-    display: flex;
-    color: #434344;
-    justify-content: center;
-  }
-
-  #icon-name {
-    display: flex;
-    font-size: 1rem;
-    font-family: cocogoose, sans-serif;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+  #logo-span {
+    font-size: 5rem;
     color: #434344;
   }
 
-  #partners {
-    display: none;
-  }
-
-  .red-line1 {
-    display: none;
-  }
-
-  #partners-container {
-    display: none;
-  }
-
-  #invisible {
-    display: none;
-  }
-
-  #footer-p,
-  #footer-paragraph {
-    margin-left: 30px;
-    margin-top: 1rem;
+  #footer-p {
+    margin-right: auto;
+    margin-top: 3rem;
+    width: 70%;
+    color: #434344;
   }
 
   .features-grid {
@@ -871,5 +952,13 @@ footer .logo div {
   .small {
     margin: 0;
     padding-left: 2px;
+  }
+
+  .main-diet {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 25px;
   }
 }

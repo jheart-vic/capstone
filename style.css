@@ -73,6 +73,10 @@ body {
   margin: 0 5px;
 }
 
+.homeul {
+  display: none;
+}
+
 .caption {
   font-weight: bolder;
   color: #272a31;
@@ -142,7 +146,7 @@ small {
   text-align: center;
   font-size: 12px;
   padding: 4px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Lato", sans-serif;
 }
 
 .box {
@@ -228,6 +232,7 @@ small {
   font-size: 10px;
   font-style: italic;
   color: #ec5242;
+  font-family: "Lato", sans-serif;
 }
 
 .features-grid {
@@ -246,7 +251,7 @@ small {
 }
 
 .mainSection {
-  border: 1px solid #979494;
+  border: 1px solid rgba(151, 148, 148, 0.27);
 }
 
 .about {
@@ -308,7 +313,7 @@ small {
   margin-bottom: 5px;
 }
 
-.main-logo #logo-name {
+.main-logo .logo-name {
   display: flex;
   font-size: 1rem;
   font-family: cocogoose, sans-serif;
@@ -350,7 +355,7 @@ small {
 }
 
 .smallest {
-  font-size: 6px;
+  font-size: 5px;
   font-weight: 100;
   color: #434344;
   margin-top: 1px;
@@ -360,9 +365,21 @@ small {
   padding: 2px;
 }
 
+.hr {
+  width: 100%;
+  margin-top: 15px;
+  color: lightgrey;
+  opacity: 0.5;
+}
+
 .paragraph2 {
   background-color: #fffa;
   color: #272a31;
+  border: #979494 1px solid;
+  width: 90%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .moved {
@@ -594,6 +611,7 @@ footer .logo div {
     width: 40%;
     margin: auto;
     padding: 25px;
+    border: 2px solid #d3d3d3;
   }
 
   .paragraph1 {

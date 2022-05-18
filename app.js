@@ -1,11 +1,10 @@
 // menu 
 const hamBurger = document.querySelector('.hambuger');
-
-function clicked() {
+function showMenu() {
   const div = document.createElement('div');
   div.className = 'modal';
   const img = document.createElement('img');
-  img.className = 'icon';
+  img.className = 'icon-img';
   img.src = './images/close.png';
   div.appendChild(img);
 
@@ -19,6 +18,7 @@ function clicked() {
       div.style.display = 'none';
     }
   }
+ 
   const ul = document.createElement('ul');
   let li = document.createElement('li');
   let a = document.createElement('a');
@@ -47,8 +47,10 @@ function clicked() {
   a.textContent = 'Register';
   a.style.textDecoration = 'none';
   a.style.color = 'white';
+  li.style.listStyle = 'none';
   ul.appendChild(li);
   a.addEventListener('click', closed);
+  li = document.createElement('li');
   a = document.createElement('a');
   a.href = '#';
   li.appendChild(a);
@@ -58,13 +60,12 @@ function clicked() {
   ul.appendChild(li);
   a.addEventListener('click', closed);
   li.style.listStyle = 'none';
-  ul.className = 'nav-links';
+  ul.className = 'nav-link';
   ul.style.display = 'block';
   div.appendChild(ul);
-  document.body.style.overflow = 'hidden';
-  const wrapper = document.querySelector('.container');
+  const wrapper = document.querySelector('.navbar');
   wrapper.appendChild(div);
   window.addEventListener('resize', resetMenu);
 }
 
-hamBurger.addEventListener('click', clicked);
+hamBurger.addEventListener('click', showMenu);

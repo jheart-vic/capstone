@@ -20,7 +20,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 44px;
   position: fixed;
   color: #fff;
@@ -30,17 +30,22 @@ body {
 }
 
 .modal ul {
-  padding: 20% 10%;
+  padding: 20% 20%;
 }
 
 .modal li {
-  border-bottom: solid gray 1px;
+  border-bottom: solid white 1px;
 }
 
 .container {
   max-height: 90vh;
   width: 375px;
   margin: 5vh auto 10vh auto;
+}
+
+.modal .icon-img {
+  float: right;
+  padding: 20px;
 }
 
 .hambuger {

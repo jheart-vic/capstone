@@ -19,8 +19,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .topmost-bar {
@@ -509,6 +508,7 @@ footer .logo div {
   font-size: 0.8rem;
   width: 55%;
   line-height: 1.5;
+  margin-left: 5%;
 }
 
 @media screen and (min-width: 786px) {
@@ -525,9 +525,10 @@ footer .logo div {
     width: 100%;
     height: auto;
     background-color: #faf7f7;
-    position: sticky;
+    position: -webkit-sticky;
     z-index: 1;
-    margin-top: 0;
+    transform: translateY(-35px);
+    box-shadow: 0.3 5px 3px  #e9e7e7;
   }
 
   .navlinks li a {
@@ -571,7 +572,6 @@ footer .logo div {
     width: 100%;
     background-color: #313131;
     top: 0;
-    position: fixed;
   }
 
   .topmost-bar {
@@ -646,7 +646,7 @@ footer .logo div {
   }
 
   .navspan {
-    font-size: 25px;
+    font-size: 2rem;
     color: #272a31;
   }
 

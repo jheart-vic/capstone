@@ -2,6 +2,7 @@
 const hamBurger = document.querySelector('.hambuger');
 
 function showMenu() {
+  console.log('check fire here')
   const div = document.createElement('div');
   div.className = 'modal';
   const img = document.createElement('img');
@@ -63,12 +64,14 @@ function showMenu() {
   ul.style.display = 'block';
   div.appendChild(ul);
   const wrapper = document.querySelector('.navbar');
+  console.log(wrapper, 'check wrapper here')
   wrapper.appendChild(div);
   window.addEventListener('resize', resetMenu);
 }
 
- hamBurger.addEventListener('click',showMenu);
+ hamBurger.addEventListener('click', showMenu);
 
+ 
 // featured speakers
 const cardArr = [
   {

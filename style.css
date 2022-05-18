@@ -215,6 +215,11 @@ small {
   text-decoration: none;
 }
 
+.foodsectionbtn li a:hover {
+  color: #ec5242;
+  font-size: 30px;
+}
+
 .line {
   display: flex;
   justify-content: center;

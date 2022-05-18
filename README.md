@@ -18,7 +18,7 @@
 
 ### Live Demo 
 > [Live Demo link](https://jheart-vic.github.io/capstone/)
-> [video link](https://www.loom.com/share/f1f4ef25e4224d4bb60950159930fd5b)
+> [video link](https://www.loom.com/share/93fda4a21f474a4abdb6fed48ee85b59)
 ### Acknowledgments
 - [Microverse](https://www.microverse.org)
 - [Cindy shin the original designer](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)

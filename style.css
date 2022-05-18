@@ -57,14 +57,22 @@ body {
   margin: 5vh auto 10vh auto;
 }
 
-.modal .icon-img {
+.icon-img {
   float: right;
   padding: 20px;
 }
 
+/* .icon-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0 0 255 0.5);
+} */
+
 .hambuger {
   color: #434344;
-  padding: 12px;
+  padding-top: 12px;
   margin: 5px;
 }
 
@@ -77,7 +85,7 @@ body {
 }
 
 .main {
-  background-image: url('./images/backimage2.jpg');
+  background-image: url('./images/back.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,12 +95,12 @@ body {
 }
 
 .main-home {
-  background-image: url('./images/backimage2.jpg');
+  background-image: url('./images/back.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   opacity: 1;
 }
 
@@ -123,9 +131,9 @@ body {
 }
 
 .caption {
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: #272a31;
-  font-size: large;
+  font-size: 20px;
 }
 
 small {
@@ -150,7 +158,9 @@ small {
 }
 
 .diet-section {
-  background-color: #272a31;
+  background-image: url(./images/back2.jpg);
+  margin-top: 0;
+  transform: translateY(-32px);
 }
 
 .grid {
@@ -304,11 +314,12 @@ small {
   font-family: "cocogoose", sans-serif;
   color: #ec5242;
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .about,
 .about2 {
-  margin-left: 45px;
+  margin-left: 5%;
 }
 
 .caption2 {
@@ -368,7 +379,7 @@ small {
 .img {
   width: 300px;
   height: 200px;
-  background-color: #ec5242;
+  background-image: url(./images/sunset.jpg);
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -528,7 +539,7 @@ footer .logo div {
     position: -webkit-sticky;
     z-index: 1;
     transform: translateY(-35px);
-    box-shadow: 0.3 5px 3px  #e9e7e7;
+    box-shadow: 0 0 8px 3px #c4c1c1;
   }
 
   .navlinks li a {
@@ -595,10 +606,11 @@ footer .logo div {
   }
 
   .main {
-    background-color: #fff;
-    height: auto;
-    padding-bottom: 10px;
-    background-image: none;
+    height: 89vh;
+    background-image: url(./images/back.png);
+    padding-top: 2rem;
+    transform: translateY(-19px);
+    background-position: center;
   }
 
   .navhidden {
@@ -657,7 +669,10 @@ footer .logo div {
   .homeul {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+    align-items: flex-start;
+    margin-right: 20px;
+    font-size: 28px;
+    transform: translate(-45px);
   }
 
   .hambuger {
@@ -667,8 +682,8 @@ footer .logo div {
   .main-home {
     margin-top: 0;
     padding-top: 3.3rem;
-    top: 0;
     height: 90vh;
+    transform: translateY(-32px);
   }
 
   .email {
@@ -694,6 +709,14 @@ footer .logo div {
     margin-right: auto;
     padding-top: 5px;
     text-align: center;
+    background: url(./images/sunset3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "cocogoose", sans-serif;
+    color: #ec5242;
   }
 
   .description {
@@ -702,7 +725,7 @@ footer .logo div {
     margin-left: 13rem;
     margin-right: auto;
     font-family: cocogoose, sans-serif;
-    padding-top: 5px;
+    padding-top: 15px;
   }
 
   .subtext {
@@ -710,7 +733,7 @@ footer .logo div {
     font-size: 1.6rem;
     margin-left: 13rem;
     margin-right: auto;
-    padding-top: 2rem;
+    padding-top: 5rem;
     font-family: "Lato", sans-serif;
   }
 
@@ -720,10 +743,11 @@ footer .logo div {
     padding: 15px;
     border: 2px solid #d3d3d3;
     text-align: center;
+    height: 20%;
   }
 
   .paragraph1 {
-    font-size: 22px;
+    font-size: 15.5px;
     color: #272a31;
     border: 2px solid #d3d3d3;
     padding: 12px;

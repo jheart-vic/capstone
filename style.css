@@ -30,7 +30,8 @@ body {
 }
 
 .modal ul {
-  padding: 20% 20%;
+  padding: 20% 10%;
+  font-size: 25px;
 }
 
 .modal li {
@@ -243,7 +244,7 @@ small {
   color: #272a31;
 }
 
-.cardRight h4 {
+.cardRight .h4 {
   color: #272a31;
 }
 
@@ -582,6 +583,10 @@ footer .logo div {
     margin-right: 10px;
   }
 
+  #cutlery {
+    color: #ec5242;
+  }
+
   .navlinks li a:hover {
     color: #ec5242;
     cursor: pointer;
@@ -615,9 +620,10 @@ footer .logo div {
   .about {
     width: 50%;
     font-size: 2.7rem;
-    margin-left: 20rem;
+    margin-left: 25%;
     margin-right: auto;
     padding-top: 5px;
+    text-align: center;
   }
 
   .description {
@@ -640,9 +646,10 @@ footer .logo div {
 
   .paragraph {
     width: 40%;
-    margin: auto;
-    padding: 25px;
+    margin: auto auto auto 30%;
+    padding: 15px;
     border: 2px solid #d3d3d3;
+    text-align: center;
   }
 
   .paragraph1 {
@@ -656,8 +663,9 @@ footer .logo div {
   }
 
   .caption2 {
-    margin-left: 30rem;
+    margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .caption,
@@ -678,10 +686,12 @@ footer .logo div {
   }
 
   .about2 {
-    margin-left: 30rem;
+    margin-left: 40%;
     margin-right: auto;
-    width: 57%;
+    width: 100%;
     margin-top: 20px;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
   }
 
   .logo-description {

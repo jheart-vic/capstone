@@ -1,4 +1,4 @@
-# capstone
+# Healthy Diet Project
 > This is the website for Healthy Meals
 ## Built With 
 - Html
@@ -18,7 +18,7 @@
 
 ### Live Demo 
 > [Live Demo link](https://jheart-vic.github.io/capstone/)
-
+### Video
 > [video link](https://www.loom.com/share/f1f4ef25e4224d4bb60950159930fd5b)
 ### Acknowledgments
 - [Microverse](https://www.microverse.org)

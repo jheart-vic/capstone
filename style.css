@@ -303,10 +303,6 @@ small {
   padding-bottom: 0.2rem;
 }
 
-.mainSection {
-  border: 1px solid rgba(151, 148, 148, 0.27);
-}
-
 .about {
   font-family: "cocogoose", sans-serif;
   color: #ec5242;
@@ -742,6 +738,8 @@ footer .logo div {
     border: 2px solid #d3d3d3;
     text-align: center;
     height: 20%;
+    color: #272a31;
+    font-weight: bolder;
   }
 
   .paragraph1 {
@@ -795,7 +793,6 @@ footer .logo div {
   }
 
   .mainSection {
-    border: 1px solid #979494;
     width: 100%;
   }
 

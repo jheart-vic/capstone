@@ -4,9 +4,9 @@ const hamBurger = document.querySelector('.hambuger');
 function showMenu() {
   const div = document.createElement('div');
   div.className = 'modal';
-  const img = document.createElement('img');
+  const img = document.createElement('h1');
   img.className = 'icon-img';
-  img.src = './images/close.png';
+  img.textContent = 'X';
   div.appendChild(img);
   function closed() {
     div.style.display = 'none';
